@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+import 'package:scube_tech_task/app/constants/app_strings.dart';
+
+import '../theme/app_colors.dart';
+import '../theme/app_font_weight.dart';
+import '../theme/app_text_sizes.dart';
+import '../widgets/app_text.dart';
+
+class AppShell extends StatelessWidget {
+  final Widget child;
+
+  const AppShell({super.key, required this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const AppText(
+          AppStrings.appBarText,
+          fontWeight: AppFontWeight.medium,
+          fontSize: AppTextSizes.subtitle,
+          color: AppColors.fontDarkBlue,
+        ),
+        centerTitle: true,
+      ),
+      body: child,
+    );
+  }
+}

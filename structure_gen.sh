@@ -15,18 +15,18 @@ folders=(
   "$ROOT/core/network"
   "$ROOT/core/utils"
 
-  # features → counter
-  "$ROOT/features/counter/data/models"
-  "$ROOT/features/counter/data/datasources"
-  "$ROOT/features/counter/data/repository"
+  # features → auth
+  "$ROOT/features/auth/data/models"
+  "$ROOT/features/auth/data/datasources"
+  "$ROOT/features/auth/data/repository"
 
-  "$ROOT/features/counter/domain/entities"
-  "$ROOT/features/counter/domain/repository"
-  "$ROOT/features/counter/domain/usecases"
+  "$ROOT/features/auth/domain/entities"
+  "$ROOT/features/auth/domain/repository"
+  "$ROOT/features/auth/domain/usecases"
 
-  "$ROOT/features/counter/presentation/bloc"
-  "$ROOT/features/counter/presentation/pages"
-  "$ROOT/features/counter/presentation/widgets"
+  "$ROOT/features/auth/presentation/bloc"
+  "$ROOT/features/auth/presentation/pages"
+  "$ROOT/features/auth/presentation/widgets"
 )
 
 for f in "${folders[@]}"; do
