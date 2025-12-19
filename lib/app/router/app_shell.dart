@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:scube_tech_task/app/constants/app_strings.dart';
-
+import 'package:flutter/material.dart';
+import 'package:scube_tech_task/generated/assets.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_font_weight.dart';
 import '../theme/app_text_sizes.dart';
@@ -22,6 +22,16 @@ class AppShell extends StatelessWidget {
           color: AppColors.fontDarkBlue,
         ),
         centerTitle: true,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 12),
+            child: Image.asset(
+              Assets.imagesBell,
+              height: 20,
+              width: 20,
+            ),
+          ),
+        ],
       ),
       body: child,
     );

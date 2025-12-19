@@ -21,4 +21,6 @@ class AppColors {
   static const Color fontRed = Color(0xFFDF2222);
   static const Color fontWhite = Color(0xFFFFFFFF);
   static const Color fontGreyDark = Color(0xFF646984);
+  static const Color fontFieldText = Color(0xFF5E5E5E);
+  static const Color fontLightDarkBlue = Color(0xFF082438);
 }

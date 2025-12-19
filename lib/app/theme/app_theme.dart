@@ -11,7 +11,6 @@ class AppTheme {
     brightness: Brightness.light,
     colorScheme: ColorScheme.fromSeed(
       seedColor: Colors.blue,
-      brightness: Brightness.light,
     ),
     textTheme: GoogleFonts.interTextTheme(),
     appBarTheme: AppBarTheme(
