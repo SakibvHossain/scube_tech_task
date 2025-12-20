@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
         android:label="Scube Task"
+        android:enableOnBackInvokedCallback="true"
         android:name="${applicationName}"
         android:icon="@mipmap/scube_launcher">
         <activity

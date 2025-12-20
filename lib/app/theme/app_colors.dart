@@ -13,6 +13,8 @@ class AppColors {
   static const Color lightCyan = Color(0xFF7BD7FF);
   static const Color purple2 = Color(0xFF9747FF);
   static const Color orangeAccent = Color(0xFFFF9A00);
+  static const Color lightGray = Color(0xFFD9E4F1);
+  static const Color darkGray = Color(0xFFB6B8D0);
 
   // Font Colors
   static const Color fontGrey = Color(0xFF979797);
@@ -23,4 +25,5 @@ class AppColors {
   static const Color fontGreyDark = Color(0xFF646984);
   static const Color fontFieldText = Color(0xFF5E5E5E);
   static const Color fontLightDarkBlue = Color(0xFF082438);
+  static const Color fontLightBlue = Color(0xFF398FC9);
 }

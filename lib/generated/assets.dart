@@ -4,6 +4,16 @@ class Assets {
 
   static const String imagesAppIcon = 'assets/images/app_icon.png';
   static const String imagesBell = 'assets/images/bell.png';
+  static const String imagesDataView1 = 'assets/images/data_view_1.png';
+  static const String imagesDataView2 = 'assets/images/data_view_2.png';
+  static const String imagesDataView3 = 'assets/images/data_view_3.png';
+  static const String imagesEmptyNotification = 'assets/images/empty_notification.png';
+  static const String imagesG1 = 'assets/images/g1.png';
+  static const String imagesG2 = 'assets/images/g2.png';
+  static const String imagesG3 = 'assets/images/g3.png';
+  static const String imagesG4 = 'assets/images/g4.png';
+  static const String imagesG5 = 'assets/images/g5.png';
+  static const String imagesG6 = 'assets/images/g6.png';
   static const String imagesLoginIcon = 'assets/images/login_icon.png';
 
 }

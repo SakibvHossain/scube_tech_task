@@ -14,7 +14,12 @@ class AppShell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.lightGray,
       appBar: AppBar(
+        backgroundColor: AppColors.fontWhite,
+        scrolledUnderElevation: 0,
+        elevation: 0,
+        surfaceTintColor: Colors.transparent,
         title: const AppText(
           AppStrings.appBarText,
           fontWeight: AppFontWeight.medium,

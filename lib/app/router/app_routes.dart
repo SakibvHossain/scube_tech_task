@@ -1,9 +1,11 @@
+import 'dart:ui';
 import 'package:go_router/go_router.dart';
 import 'package:scube_tech_task/app/router/app_route_names.dart';
 import 'package:scube_tech_task/app/router/app_route_paths.dart';
 import 'package:scube_tech_task/app/router/app_shell.dart';
 import 'package:scube_tech_task/features/auth/presentation/pages/login_page.dart';
 import 'package:scube_tech_task/features/scm/presentation/pages/dashboard_page.dart';
+import 'package:scube_tech_task/features/scm/presentation/pages/notification_page.dart';
 
 final GoRouter goRouter = GoRouter(
   initialLocation: AppRoutePaths.loginPath,
@@ -16,9 +18,17 @@ final GoRouter goRouter = GoRouter(
           builder: (context, index) => const DashboardPage(),
         ),
       ],
-      builder: (context, state, child) {
-        return AppShell(child: child);
-      },
+        builder: (context, state, child) {
+          return AppShell(
+            child: child,
+          );
+        },
+    ),
+
+    GoRoute(
+      path: AppRoutePaths.notificationPath,
+      name: AppRouteNames.notification,
+      builder: (context, index) => const NotificationPage(),
     ),
 
     GoRoute(
