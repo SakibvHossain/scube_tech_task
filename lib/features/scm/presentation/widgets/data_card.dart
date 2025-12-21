@@ -4,6 +4,7 @@ import '../../../../app/theme/app_colors.dart';
 import '../../../../app/theme/app_font_weight.dart';
 import '../../../../app/theme/app_text_sizes.dart';
 import '../../../../app/widgets/app_text.dart';
+import 'key_value_row.dart';
 
 class DataCard extends StatelessWidget {
   final String title;
@@ -35,7 +36,7 @@ class DataCard extends StatelessWidget {
       ),
       child: Row(
         children: [
-          // LEFT ICON
+          //Left Icon
           Image.asset(
             iconPath,
             height: 40,
@@ -45,12 +46,11 @@ class DataCard extends StatelessWidget {
 
           const SizedBox(width: 12),
 
-          // CENTER CONTENT
+          // Center Content
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // TITLE + STATUS
                 Row(
                   children: [
                     Container(
@@ -75,59 +75,16 @@ class DataCard extends StatelessWidget {
                     ),
                   ],
                 ),
-
                 const SizedBox(height: 6),
-
-                // DATA ROW 1
-                _KeyValueRow(label: 'Data 1', value: data1),
-
+                KeyValueRow(label: 'Data 1', value: data1),
                 const SizedBox(height: 2),
-
-                // DATA ROW 2
-                _KeyValueRow(label: 'Data 2', value: data2),
+                KeyValueRow(label: 'Data 2', value: data2),
               ],
             ),
           ),
-
-          // RIGHT ARROW
           const Icon(
             Icons.chevron_right,
             color: Colors.grey,
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _KeyValueRow extends StatelessWidget {
-  final String label;
-  final String value;
-
-  const _KeyValueRow({
-    required this.label,
-    required this.value,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Text.rich(
-      TextSpan(
-        children: [
-          TextSpan(
-            text: '$label      : ',
-            style: const TextStyle(
-              fontSize: AppTextSizes.caption,
-              color: AppColors.fontFieldText,
-            ),
-          ),
-          TextSpan(
-            text: value,
-            style: const TextStyle(
-              fontSize: AppTextSizes.caption,
-              color: AppColors.fontDarkBlue,
-              fontWeight: AppFontWeight.regular,
-            ),
           ),
         ],
       ),

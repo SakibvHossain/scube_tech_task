@@ -4,13 +4,23 @@ import 'package:scube_tech_task/app/router/app_routes.dart';
 import 'package:scube_tech_task/app/theme/app_theme.dart';
 import 'package:scube_tech_task/app/theme/theme_cubit.dart';
 
+import '../features/scm/presentation/bloc/energy_dashboard_cubit.dart';
+import '../features/scm/presentation/pages/energy_dashboard_page.dart' hide DashboardCubit;
+
 class ScubeTechApp extends StatelessWidget {
   const ScubeTechApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (_) => ThemeCubit(),),],
+      providers: [
+        BlocProvider(
+          create: (_) => ThemeCubit(),
+        ),
+        BlocProvider(
+          create: (_) => DashboardCubit(),
+        )
+      ],
       child: BlocBuilder<ThemeCubit, ThemeMode>(
         builder: (context, themeMode) {
           return MaterialApp.router(

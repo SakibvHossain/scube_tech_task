@@ -1,0 +1,1 @@
+enum DataSubView { today, custom }

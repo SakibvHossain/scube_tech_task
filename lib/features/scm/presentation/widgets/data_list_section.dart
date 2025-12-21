@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:scube_tech_task/app/router/app_route_paths.dart';
 import '../../../../app/theme/app_colors.dart';
 import '../../../../generated/assets.dart';
 import 'data_card.dart';
@@ -33,13 +35,16 @@ class DataListSection extends StatelessWidget {
               controller: scrollController,
               itemCount: 3,
               itemBuilder: (context, index) {
-                return DataCard(
-                  title: 'Data View ${index + 1}',
-                  isActive: index != 2,
-                  data1: '55505.63',
-                  data2: '58805.63',
-                  iconPath: imageList[index],
-                  color: colorList[index],
+                return GestureDetector(
+                  onTap: () => context.push(AppRoutePaths.detailsPath),
+                  child: DataCard(
+                    title: 'Data View ${index + 1}',
+                    isActive: index != 2,
+                    data1: '55505.63',
+                    data2: '58805.63',
+                    iconPath: imageList[index],
+                    color: colorList[index],
+                  ),
                 );
               },
             ),

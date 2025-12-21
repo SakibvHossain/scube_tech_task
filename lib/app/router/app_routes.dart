@@ -5,6 +5,7 @@ import 'package:scube_tech_task/app/router/app_route_paths.dart';
 import 'package:scube_tech_task/app/router/app_shell.dart';
 import 'package:scube_tech_task/features/auth/presentation/pages/login_page.dart';
 import 'package:scube_tech_task/features/scm/presentation/pages/dashboard_page.dart';
+import 'package:scube_tech_task/features/scm/presentation/pages/energy_dashboard_page.dart';
 import 'package:scube_tech_task/features/scm/presentation/pages/notification_page.dart';
 
 final GoRouter goRouter = GoRouter(
@@ -29,6 +30,12 @@ final GoRouter goRouter = GoRouter(
       path: AppRoutePaths.notificationPath,
       name: AppRouteNames.notification,
       builder: (context, index) => const NotificationPage(),
+    ),
+
+    GoRoute(
+      path: AppRoutePaths.detailsPath,
+      name: AppRouteNames.details,
+      builder: (context, index) => const EnergyDashboardPage(),
     ),
 
     GoRoute(
