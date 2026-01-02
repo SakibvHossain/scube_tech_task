@@ -62,8 +62,8 @@ jobs:
         uses: Ilshidur/action-discord@master
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          DISCORD_USERNAME: "GitHub Actions"
-          DISCORD_AVATAR: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          DISCORD_USERNAME: "Scube Task App"
+          DISCORD_AVATAR: "https://www.scube.com.bd/media/Logo-scube.png"
           DISCORD_EMBEDS: |
             [
               {
