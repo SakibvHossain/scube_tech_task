@@ -5,6 +5,8 @@ A Flutter application built by following the provided Figma design and interacti
 ## Skills Used:
 Flutter Bloc (Cubit), Clean Architecture, Flutter Hooks, GoRouter, Bash scripting for project structure generation, and responsive UI development based on Figma.
 
+## Application Deployment Status:
+[![Android Release](https://github.com/SakibvHossain/scube_tech_task/actions/workflows/android_release.yml/badge.svg)](https://github.com//SakibvHossain/scube_tech_task/actions/workflows/android_release.yml) 
 
 ## Architecture
 
