@@ -114,5 +114,7 @@ flutter run
   <img src="https://github.com/user-attachments/assets/5c152497-3a1c-420c-8c08-448b876866be" width="220"/>
 </p>
 
+## Discord Result
+<img width="686" height="229" alt="image" src="https://github.com/user-attachments/assets/f755dfd4-df32-4e55-b43f-4025fb573c72" />
 
 Thank you for reviewing this assignment.
